@@ -1,83 +1,118 @@
-
-    @import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Open+Sans:ital,wght@1,500&display=swap');
-    /* wildcard styling */
-	* {
-		box-sizing: border-box;
-	}
-	
-	/* padding for whole body */
-	body {
-		padding: 15px;
-	}
-	
-	/* styling body */
-	.container {
-		max-width: 1200px;
-		margin: auto;
-	}
-	
-	h1 {
-		color: green;
-	}
-	
-	/* anchor tag decoration */
-	a {
+.button {
+		background-color: #4CAF50;
+		border: none;
+		color: rgb(0, 0, 0);
+		padding: 15px 32px;
+		text-align: center;
 		text-decoration: none;
-		color: #ff0000;
-	}
-	
-	a:hover {
-		color: lightblue;
-	}
-	
-	/* paragraph tag decoration */
-	p {
-		display: -webkit-box;
-		-webkit-box-orient: vertical;
-		-webkit-line-clamp: 4;
-		overflow: hidden;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+	  }
 
-	}
+    a.button:hover {
+        background-color: #008509;
+        box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.4); 
+    }
 	
-	/* row and column decoration */
-	.row {
-		margin: 0px -18px;
-		padding: 8px;
-	}
-	
-	.row > .column {
-		padding: 6px;
-	}
-	
-	.column {
-		float: left;
-		width: 25%;
-	}
-	
-	.row:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
-	
-	/* content decoration */
-	.content {
-		background-color: white;
-		padding: 10px;
-		border: 1px solid gray;
-	}
-	
-	/* window size 850 width set */
-	@media screen and (max-width: 850px) {
-		.column {
-			width: 50%;
+		/* wildcard styling */
+		* {
+			box-sizing: border-box;
 		}
-	}
+		
+		/* padding for whole body */
+		body {
+			padding: 15px;
+            background-image: url('doodle-space-wallpaper.png'); 
+            background-size: cover;
+		}
+		
+		/* styling body */
+		.container {
+			max-width: 1200px;
+			margin: auto;
+            font-family: 'Inclusive Sans', sans-serif;
+            font-family: 'Open Sans', sans-serif;
+		}
 
-	/* window size 400 width set */
-	@media screen and (max-width: 400px) {
-		.column {
-			width: 100%;
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 3%;
+            background-color: #ffffff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+		
+		h1 {
+			color: green;
+            font-family: 'Inclusive Sans', sans-serif;
 		}
-	}
+		
+		/* anchor tag decoration */
+		a {
+			text-decoration: none;
+			color: green;
+            font-family: 'Inclusive Sans', sans-serif;
+		}
+		
+		a:hover {
+			color: lightblue;
+		}
+		
+		/* paragraph tag decoration */
+		p {
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 4;
+			overflow:auto;
+            
+		}
+		
+		/* row and column decoration */
+		.row {
+			margin: 0px -18px;
+			padding: 8px;
+		}
+		
+		.row > .column {
+			padding: 6px;
+		}
+		
+		.column {
+			float:none;
+			width: 75%;
+		}
+		
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		
+		/* content decoration */
+		.content {
+        background-color: rgb(255, 255, 255);
+        padding: 20px; /* Mengatur padding yang lebih besar */
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 10px; /* Mengatur sudut kotak */
+        font-family: 'Inclusive Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 20px;
+		margin-left: 30px; /* Mengatur jarak antara konten-konten */
+    }
+		
+		/* window size 850 width set */
+		@media screen and (max-width: 850px) {
+			.column {
+				width: 50%;
+			}
+		}
+	
+		/* window size 400 width set */
+		@media screen and (max-width: 400px) {
+			.column {
+				width: 100%;
+			}
+		}
